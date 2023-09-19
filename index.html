@@ -15,7 +15,7 @@
 
 <body>
     <!-- Navbar Section     -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">iCoder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,9 +54,80 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Login-Modal-->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="LoginModalLabel"><strong> Login </strong></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <Form>
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"><strong>Email address</strong></label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary"><strong>Submit</strong></button>
+                            <button type="submit" class="btn btn-primary"><strong>Cancel</strong></button>
+                          </form>
+                    </Form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp-Modal-->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="SignUpModalLabel"><strong> SignUp Here </strong></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <Form>
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"><strong>Email address</strong></label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"><strong>Contact Number</strong></label>
+                              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contact">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label"><strong>Re-Enter Password</strong></label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-Enter Password">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1"><strong>Accept Terms & Condition</strong></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><strong>Ragister</strong></button>
+                            <button type="submit" class="btn btn-primary"><strong>Cancel</strong></button>
+                          </form>
+                    </Form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Crousel(Image Slider)-->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel">
@@ -122,7 +193,8 @@
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
                         <h3 class="mb-0"> Coding Conferences</h3>
                         <div class="mb-1 text-muted">Nov-1</div>
-                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to
+                            additional content.</p>
                         <a href="#" class="stretched-link">Continue reading </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -138,7 +210,8 @@
                         <strong class="d-inline-block mb-2 text-primary">Designe</strong>
                         <h3 class="mb-0"> Learn Designing</h3>
                         <div class="mb-1 text-muted">Nov-1</div>
-                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to
+                            additional content.</p>
                         <a href="#" class="stretched-link">Continue reading </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -156,12 +229,13 @@
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
                         <h3 class="mb-0"> Coding Conferences</h3>
                         <div class="mb-1 text-muted">Nov-1</div>
-                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to
+                            additional content.</p>
                         <a href="#" class="stretched-link">Continue reading </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img src="thumb2.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
-    
+
                     </div>
                 </div>
             </div>
@@ -172,12 +246,13 @@
                         <strong class="d-inline-block mb-2 text-primary">Designe</strong>
                         <h3 class="mb-0"> Learn Designing</h3>
                         <div class="mb-1 text-muted">Nov-1</div>
-                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text mb-auto">This is a wider supporting text below as a natural lead-in to
+                            additional content.</p>
                         <a href="#" class="stretched-link">Continue reading </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img src="/thum4.jpg" alt="" class="bd-placeholder-img" width="200" height="250">
-    
+
                     </div>
                 </div>
             </div>
@@ -186,10 +261,10 @@
 
     <!--About -Footer -->
     <footer class="container">
-        <hr class="featurette-divider"> 
+        <hr class="featurette-divider">
         <p class="float-end"><a href="#">Back to top</a></p>
         <p>© 2023–2024 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
+    </footer>
 
 
     <!-- Bootstrap JS-->
