@@ -43,6 +43,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item active" href="/support.html">Support</a></li>
+                            <li><a class="dropdown-item" href="/WiteToUs.html">Write for us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -60,7 +61,89 @@
             </div>
         </div>
     </nav>
+    <!-- Login-Modal-->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="LoginModalLabel"><strong> Login to iCoder </strong></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <Form>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><strong>Email
+                                        address</strong></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-success"><strong>Login</strong></button>
+                            <button type="submit" class="btn btn-danger"><strong>Forget Password</strong></button>
+                        </form>
+                    </Form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- SignUp-Modal-->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="SignUpModalLabel"><strong> Get an iCoder account </strong></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <Form>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><strong>Email
+                                        address</strong></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><strong>Contact
+                                        Number</strong></label>
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Contact">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><strong>Re-Enter
+                                        Password</strong></label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Re-Enter Password">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1"><strong>Accept Terms &
+                                        Condition</strong></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><strong>Create Account</strong></button>
+                        </form>
+                    </Form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--About -Footer -->
     <footer class="container">
         <hr class="featurette-divider">
